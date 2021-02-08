@@ -1,11 +1,6 @@
-// <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-// <style>
-//   .attribution { font-size: 11px; text-align: center; }
-//   .attribution a { color: hsl(228, 45%, 44%); }
-// </style>
-
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 
+// **********Mobile**********
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,17 +30,14 @@ body {
     margin-bottom: 50px;
 
     h2 {
-
-      &:nth-of-type(1) {
-        letter-spacing: .1em;
-        margin: 5px 0;
-      }
+      letter-spacing: .1em;
+      margin: 5px 0;
     }
   }
 
   main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
     grid-gap: 1em;
   
     .days, .hours, .minutes, .seconds {
@@ -153,6 +145,7 @@ body {
   }
 }
 
+// **********Desktop**********
 
 @media screen and (min-width: 768px) {
   .wrapper {
@@ -172,6 +165,7 @@ body {
       width: 336px;
       width: 500px;
       margin: auto;
+      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
       grid-gap: 2.8em;
 
       .days, .hours, .minutes, .seconds {
@@ -209,5 +203,3 @@ body {
     }
   }
 }
-
-
